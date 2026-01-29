@@ -1,28 +1,137 @@
-<!DOCTYPE html>
- <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travellin Made Easy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="travel_recommendation.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling Made Easy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-</head>
-<body>
+      body {
+        min-height: 100vh;
+        background-image: url("travel-picture.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      nav {
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav h1 {
+        font-size: 24px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      nav ul li {
+        color: white;
+        cursor: pointer;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      input[type="search"] {
+        padding: 6px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button[type="submit"] {
+        background-color: #ff9800;
+        color: white;
+      }
+
+      button[type="reset"] {
+        background-color: #f44336;
+        color: white;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+
+      .hero-text {
+        margin: 80px 40px;
+      }
+
+      h2 {
+        color: white;
+        font-size: 42px;
+        letter-spacing: 2px;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #f1f1f1;
+        font-size: 18px;
+        max-width: 600px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
     <nav>
-        <h1>Travel With Us</h1>
+      <h1>Travelling Made Easy</h1>
 
-        <ul>
-            <li><a href="#home"></a>Home</li>
-            <li><a href="#about"></a>About Us</li>
-            <li><a href="#contact"></a>Contact Us</li>
-            <li>
-                <input type="search" placeholder="Search destination...">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                <button type="reset">Reset</button>
-            </li>
-            
-        </ul>
+      <ul>
+        <li><a href="travel_recommendation.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li>
+          <input type="search" placeholder="Search destination..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <button type="reset">Reset</button>
+        </li>
+      </ul>
     </nav>
-</body>
+
+    <div class="hero-text">
+      <h2>EXPLORE DREAM DESTINATIONS</h2>
+      <p>
+        Welcome to Travelling Made Easy — your go-to place for discovering exciting
+        destinations and planning your next adventure. We make travelling
+        easier, faster, and more enjoyable, so you can focus on creating
+        unforgettable memories.
+      </p>
+    </div>
+
+    <script src="travel_recommendation.js"></script>
+  </body>
 </html>
