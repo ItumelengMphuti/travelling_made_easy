@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelling Made Easy - About Us</title>
     <style>
-        * {
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -14,13 +14,24 @@
 
       body {
         min-height: 100vh;
+        position: relative;
+        margin: 0;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
         background-image: url("travel-picture.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        opacity: 0.6;
+        z-index: -1;
       }
 
       nav {
+        
         background: rgba(0, 0, 0, 0.6);
         color: white;
         padding: 15px 30px;
@@ -51,24 +62,28 @@
       }
 
       nav ul li a:hover {
-        text-decoration: underline;
+        color: antiquewhite;
       }
 
-            h2 {
-        color: white;
+      h2 {
+        /* color: white; */
         font-size: 42px;
         letter-spacing: 2px;
         margin-bottom: 16px;
         text-transform: uppercase;
       }
 
-      p, ul{
-        color: #f1f1f1;
-        font-size: 18px;
-        max-width: 600px;
+       section {
+        font-size: 20px;
         line-height: 1.6;
+        max-width: 500px;
+       }
+      .about-us {
+        margin-left: 20%;
       }
-
+      .the-team {
+        margin-left: 50%;
+      }
     </style>
   </head>
   <body>
@@ -78,23 +93,28 @@
       <ul>
         <li><a href="travel_recommendation.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
       </ul>
     </nav>
 
-    <h2>About Us</h2>
-    <p>
-      Travel With Us was created to make exploring the world simple, exciting,
-      and stress-free. We help travelers discover inspiring destinations and
-      plan journeys with confidence.
-    </p>
-
-    <h2>Meet the Team</h2>
-    <ul>
-      <li><strong>Itumeleng Mphuti</strong> — Founder & Front-End Developer</li>
-      <li><strong>Alex Smith</strong> — Back-End Developer</li>
-      <li><strong>Naledi Khumalo</strong> — Content & Research</li>
-      <li><strong>Jordan Lee</strong> — UI/UX Designer</li>
-    </ul>
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>
+        Travel With Us was created to make exploring the world simple, exciting,
+        and stress-free. We help travelers discover inspiring destinations and
+        plan journeys with confidence.
+      </p>
+    </section>
+    <section class="the-team">
+      <h2>Meet the Team</h2>
+      <ul>
+        <li>
+          <strong>Itumeleng Mphuti</strong> — Founder & Front-End Developer
+        </li>
+        <li><strong>Alex Smith</strong> — Back-End Developer</li>
+        <li><strong>Naledi Khumalo</strong> — Content & Research</li>
+        <li><strong>Jordan Lee</strong> — UI/UX Designer</li>
+      </ul>
+    </section>
   </body>
 </html>

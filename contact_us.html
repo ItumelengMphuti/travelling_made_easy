@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travelling Made Easy</title>
-    <link
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Travelling Made Easy</title>
+   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -117,9 +117,9 @@
         max-width: 600px;
         line-height: 1.6;
       }
-    </style>
-  </head>
-  <body>
+    </style
+</head>
+<body>
     <nav>
       <h1>Travelling Made Easy</h1>
 
@@ -127,24 +127,27 @@
         <li><a href="travel_recommendation.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
-        <li>
-          <input type="search" placeholder="Search destination..." />
-          <button type="submit"><i class="fa fa-search"></i></button>
-          <button type="reset">Reset</button>
-        </li>
       </ul>
     </nav>
 
-    <div class="hero-text">
-      <h2>EXPLORE DREAM DESTINATIONS</h2>
-      <p>
-        Welcome to Travelling Made Easy — your go-to place for discovering exciting
-        destinations and planning your next adventure. We make travelling
-        easier, faster, and more enjoyable, so you can focus on creating
-        unforgettable memories.
-      </p>
-    </div>
+    <h1>Contact Us</h1>
 
-    <script src="travel_recommendation.js"></script>
-  </body>
+  <form action="#" method="post">
+    
+    <label for="name">Full Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email Address:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="subject">Subject:</label><br />
+    <input type="text" id="subject" name="subject" /><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+    <button type="submit">Send Message</button>
+
+  </form>
+</body>
 </html>
