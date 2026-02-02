@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Travelling Made Easy</title>
-   <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling Made Easy</title>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -33,7 +33,6 @@
         opacity: 0.6;
         z-index: -1;
       }
-
 
       nav {
         background: rgba(0, 0, 0, 0.6);
@@ -65,7 +64,6 @@
         color: white;
       }
 
-      
       nav ul li a:hover {
         color: antiquewhite;
       }
@@ -102,6 +100,12 @@
         margin: 80px 40px;
       }
 
+      .contact {
+        text-align: center;
+        font-size: 50px;
+        color: #050505;
+      } 
+
       h2 {
         color: rgb(0, 0, 0);
         font-size: 50px;
@@ -117,9 +121,60 @@
         max-width: 600px;
         line-height: 1.6;
       }
-    </style
-</head>
-<body>
+      form {
+        max-width: 500px;
+        margin: 0 auto 60px;
+        background: rgba(141, 140, 140, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Labels */
+      form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 6px;
+        color: #333;
+      }
+
+      /* Inputs and textarea */
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      /* Focus effect */
+      form input:focus,
+      form textarea:focus {
+        border-color: #ff9800;
+        box-shadow: 0 0 4px rgba(255, 152, 0, 0.6);
+      }
+
+      /* Submit button */
+      form button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: #e68900;
+      }
+    </style>
+  </head>
+  <body>
     <nav>
       <h1>Travelling Made Easy</h1>
 
@@ -130,24 +185,23 @@
       </ul>
     </nav>
 
-    <h1>Contact Us</h1>
+    <h1 class="contact">Contact Us</h1>
 
-  <form action="#" method="post">
-    
-    <label for="name">Full Name:</label><br />
-    <input type="text" id="name" name="name" required /><br /><br />
+    <form action="#" method="post">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
-    <label for="email">Email Address:</label><br />
-    <input type="email" id="email" name="email" required /><br /><br />
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
-    <label for="subject">Subject:</label><br />
-    <input type="text" id="subject" name="subject" /><br /><br />
+      <label for="subject">Subject:</label><br />
+      <input type="text" id="subject" name="subject" /><br /><br />
 
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea
+      ><br /><br />
 
-    <button type="submit">Send Message</button>
-
-  </form>
-</body>
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
 </html>
