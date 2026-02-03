@@ -19,6 +19,7 @@ fetch("travel_recommendation_api.json")
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
 const resultsDiv = document.getElementById("results");
+const clearBtn = document.getElementById("clearBtn");
 
 
 searchBtn.addEventListener("click", () => {
@@ -54,4 +55,9 @@ searchBtn.addEventListener("click", () => {
 
     resultsDiv.appendChild(card);
   });
+});
+
+clearBtn.addEventListener("click", () => {
+  resultsDiv.innerHTML = "";
+  searchInput.value = "";
 });
