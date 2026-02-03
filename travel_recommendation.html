@@ -26,14 +26,13 @@
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("travel-picture.jpeg");
+        background-image: url("./images/travel-picture.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         opacity: 0.6;
         z-index: -1;
       }
-
 
       nav {
         background: rgba(0, 0, 0, 0.6);
@@ -65,7 +64,6 @@
         color: white;
       }
 
-      
       nav ul li a:hover {
         color: antiquewhite;
       }
@@ -98,6 +96,23 @@
         opacity: 0.9;
       }
 
+.nav-search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#results {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+
       .hero-text {
         margin: 80px 40px;
       }
@@ -127,21 +142,21 @@
         <li><a href="travel_recommendation.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact_us.html">Contact Us</a></li>
-        <li>
-          <input type="search" placeholder="Search destination..." />
-          <button type="submit"><i class="fa fa-search"></i></button>
-          <button type="reset">Reset</button>
-        </li>
+        <div class="nav-search">
+    <input type="search" id="searchInput" placeholder="Search destinations" />
+    <button id="searchBtn">Search</button>
+    <button id="clearBtn">Clear</button>
+  </div>
       </ul>
     </nav>
-
+    <div id="results"></div>
     <div class="hero-text">
       <h2>EXPLORE DREAM DESTINATIONS</h2>
       <p>
-        Welcome to Travelling Made Easy — your go-to place for discovering exciting
-        destinations and planning your next adventure. We make travelling
-        easier, faster, and more enjoyable, so you can focus on creating
-        unforgettable memories.
+        Welcome to Travelling Made Easy — your go-to place for discovering
+        exciting destinations and planning your next adventure. We make
+        travelling easier, faster, and more enjoyable, so you can focus on
+        creating unforgettable memories.
       </p>
     </div>
 
